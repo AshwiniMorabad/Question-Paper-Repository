@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Level Dropdown Menu</title>
+    <STYLE>
+body {
+    font-family: Arial, sans-serif;
+  /*  background:linear-gradient(to bottom, #3498db, #ffffff);*/
+  
+
+}
+
+nav {
+    background-color: #333;
+    color: white;
+}
+
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #555;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+}
+
+.submenu > li {
+    position: relative;
+}
+
+.submenu > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu > li > a:hover {
+    background-color: #666;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+} 
+
+
+/*video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 100%;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+ */
+    </STYLE>
+</head>
+<body>
+   <!--- <div class="video-container">
+    <video autoplay muted loop>
+        <source src="vid.mp4" type="video/mp4">
+       
+      </video>
+      <div class="overlay">
+        
+    -->
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">SEM-I</a>
+            
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="Kannada_qp.pdf" target="_blank">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+
+                        </ul></li>
+                    <li><a href="#">COMPUTER SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="Cs QP.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">MATHEMATICS</a>
+                        <ul class="submenu">
+                            <li><a href="Maths QP.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="English QP.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li><a href="#">SEM-II</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="2022-2ka.pdf" target="_blank">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+
+                        </ul></li>
+                    <li><a href="#">COMPUTER SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="2022-2cs.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">MATHEMATICS</a>
+                        <ul class="submenu">
+                            <li><a href="2022-2m.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="2022-2E.pdf">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </li>
+
+            <li><a href="#">SEM-III</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="2023-3KA.pdf" target="_blank">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                            
+
+                        </ul></li>
+                    <li><a href="#">COMPUTER SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="2023-3cs.pdf">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                           
+                        </ul>
+                    </li>
+
+                    <li><a href="#">MATHEMATICS</a>
+                        <ul class="submenu">
+                            
+                            <li><a href="2023-3M.pdf">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            
+                            <li><a href="2023-3E.pdf">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </li>
+
+
+
+            <li><a href="#">SEM-IV</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="2023-4Ka.pdf" target="_blank">2023</a></li>
+                          
+                            
+
+                        </ul></li>
+                    <li><a href="#">COMPUTER SCIENCE</a>
+                        <ul class="submenu">
+                           
+                            <li><a href="2023-4cs.pdf">2023</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">MATHEMATICS</a>
+                        <ul class="submenu">
+                            
+                            <li><a href="2023-4M.pdf">2023</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                           
+                            <li><a href="2023-4E.pdf">2023</a></li>
+                            
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </li>
+
+
+            <li><a href="#">SEM-V</a>
+                <ul class="submenu">
+                    <li><a href="#">MATHEMATICS</a>
+                        <ul class="submenu">
+                            <li><a href="paper1math.pdf" target="_blank">paper-1</a></li>
+                            <li><a href="paper2math.pdf">paper-2</a></li>
+
+                        </ul></li>
+                    <li><a href="#">COMPUTER SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="2024-5CS1.pdf">paper-1</a></li>
+                            <li><a href="paper2cs.pdf">paper-2</a></li>
+                        </ul>
+                    </li>
+
+                   
+                    
+                   
+                </ul>
+            </li>
+
+            
+         </ul>
+
+    </nav>
+    <img src="qp.jpeg" width="100%"height="700px">
+   
+    <script src="scrip.js"></script>
+</body>
+</html>

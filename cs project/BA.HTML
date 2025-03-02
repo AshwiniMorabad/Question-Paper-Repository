@@ -1,0 +1,314 @@
+<!--CODE FOR SELECTION OF COURSE AND QUESTION PAPERS-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Level Dropdown Menu</title>
+    <STYLE>
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    background-color: #333;
+    color: white;
+}
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu > li > a:hover {
+    background-color: #555;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;   
+}
+.submenu > li {
+    position: relative;
+}
+.submenu > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.submenu > li > a:hover {
+    background-color: #666;
+    
+}
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+} 
+
+</STYLE>
+</head>
+<body>
+   
+<nav>
+    <ul class="menu">
+        <li><a href="#">SEM-I</a>
+            <ul class="submenu">
+                <li><a href="#">KANNADA</a>
+                    <ul class="submenu">
+                        <li><a href="BA-K-22">2022</a></li>
+                        <li><a href="BA-K-23" target="_blank">2023</a></li>
+                        <li><a href="BA-K-24" target="_blank">2024</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">POLITICAL SCIENCE</a>
+                    <ul class="submenu">
+                        <li><a href="BA-P-22" target="_blank">2022</a></li>
+                        <li><a href="BA-P-23" target="_blank">2023</a></li>
+                        <li><a href="BA-P-24" target="_blank">2024</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ENGLISH</a>
+                    <ul class="submenu">
+                        <li><a href="BA-E-22" target="_blank">2022</a></li>
+                        <li><a href="BA-E-23" target="_blank">2023</a></li>
+                        <li><a href="BA-E-24" target="_blank">2024</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SOCIAL SCIENCE</a>
+                    <ul class="submenu">
+                        <li><a href="BA-SS-22" target="_blank">2022</a></li>
+                        <li><a href="BA-SS-23" target="_blank">2023</a></li>
+                        <li><a href="BA-SS-24" target="_blank">2024</a></li>
+                    </ul>
+                    </li><li><a href="#">HISTORY</a>
+                        <ul class="submenu">
+                            <li><a href="BA-H-22" target="_blank">2022</a></li>
+                            <li><a href="BA-H-23" target="_blank">2023</a></li>
+                            <li><a href="BA-H-24" target="_blank">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GEOGRAPHY</a>
+                        <ul class="submenu">
+                            <li><a href="BA-G-22" target="_blank">2022</a></li>
+                            <li><a href="BA-G-23">2023</a></li>
+                            <li><a href="BA-G-24">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ECONOMICS</a>
+                        <ul class="submenu">
+                            <li><a href="BA-EC-22" target="_blank">2022</a></li>
+                            <li><a href="BA-EC-23">2023</a></li>
+                            <li><a href="BA-EC-24">2024</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+            <li><a href="#">SEM-II</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-K-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-K-2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">POLITICAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-P-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-P-2023">2023</a></li>
+                               
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-E-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-E-2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOCIAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-SS-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-SS-2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HISTORY</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-H-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-H-2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GEOGRAPHY</a>
+                        <ul class="submenu">
+                            <li><a href="BA-2-G-2022" target="_blank">2022</a></li>
+                            <li><a href="BA-2-G-2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ECONOMICS</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2022</a></li>
+                            <li><a href="#">2023</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">SEM-III</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">POLITICAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="3" target="_blank">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="3" target="_blank">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOCIAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2024</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HISTORY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GEOGRAPHY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2024</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ECONOMICS</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2024</a></li>
+                            <li><a href="#">2024</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">SEM-IV</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                          
+                            
+
+                        </ul>
+                    </li>
+                    <li><a href="#">POLITICAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                                
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SOCIAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HISTORY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">GEOGRAPHY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">2023</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">SEM-V</a>
+                <ul class="submenu">
+                    <li><a href="#">KANNADA</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#">paper-2</a></li>
+                            <li><a href="#" >paper-3</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">POLITICAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ENGLISH</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SOCIAL SCIENCE</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">HISTORY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GEOGRAPHY</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ECONOMICS</a>
+                        <ul class="submenu">
+                            <li><a href="#" target="_blank">paper-1</a></li>
+                            <li><a href="#" target="_blank">paper-2</a></li>
+                            <li><a href="#" target="_blank">paper-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+         </ul>
+</nav>
+<img src="qp.jpeg" width="100%"height="600px">
+<script src="scrip.js"></script>
+</body>
+</html>
